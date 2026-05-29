@@ -1,0 +1,11 @@
+{
+  "monitored_folders": [
+    "C:\\Users\\rezas\\Downloads"
+  ],
+  "auto_organize": true,
+  "duplicate_scan_frequency_minutes": 60,
+  "theme": "dark",
+  "notifications_enabled": true,
+  "organize_root": null,
+  "max_file_size_large_mb": 100
+}

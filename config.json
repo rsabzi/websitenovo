@@ -1,0 +1,16 @@
+{
+  "grid_size": 32,
+  "tick_interval_seconds": 0.35,
+  "meta_interval_ticks": 25,
+  "max_buildings": 900,
+  "weights": {
+    "accessibility": 0.5,
+    "resources": 0.3,
+    "pollution": 0.2
+  },
+  "initial_resources": {
+    "power": 1000,
+    "water": 1000,
+    "road_access": 1.0
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "rules": [
+    {
+      "id": "archives",
+      "name": "Archives",
+      "enabled": true,
+      "condition": {
+        "extension": ".zip",
+        "min_size": null,
+        "max_size": null,
+        "filename_contains": null,
+        "created_before": null,
+        "created_after": null,
+        "file_type": null
+      },
+      "action": {
+        "type": "move",
+        "move_to": "Archives",
+        "rename_template": null,
+        "tag": null
+      }
+    },
+    {
+      "id": "pdf-documents",
+      "name": "PDF Documents",
+      "enabled": true,
+      "condition": {
+        "extension": ".pdf",
+        "min_size": null,
+        "max_size": null,
+        "filename_contains": null,
+        "created_before": null,
+        "created_after": null,
+        "file_type": null
+      },
+      "action": {
+        "type": "move",
+        "move_to": "Documents",
+        "rename_template": null,
+        "tag": null
+      }
+    },
+    {
+      "id": "python-code",
+      "name": "Python Code",
+      "enabled": true,
+      "condition": {
+        "extension": ".py",
+        "min_size": null,
+        "max_size": null,
+        "filename_contains": null,
+        "created_before": null,
+        "created_after": null,
+        "file_type": null
+      },
+      "action": {
+        "type": "move",
+        "move_to": "Code",
+        "rename_template": null,
+        "tag": null
+      }
+    },
+    {
+      "id": "87d20e36-6deb-46aa-817c-5ec8f2fd85bf",
+      "name": ".pdf \u2192 Documents",
+      "enabled": true,
+      "condition": {
+        "extension": ".pdf",
+        "min_size": null,
+        "max_size": null,
+        "filename_contains": null,
+        "created_before": null,
+        "created_after": null,
+        "file_type": null
+      },
+      "action": {
+        "type": "move",
+        "move_to": "Documents",
+        "rename_template": null,
+        "tag": null
+      }
+    }
+  ]
+}
