@@ -39,7 +39,14 @@ class WatcherManager:
         for folder in folders:
             self.add_folder(folder)
         if not self.observer.is_alive():
-            self.observer.start()
+            try:
+                self.observer.start()
+            except RuntimeError:
+                self.observer = Observer()
+                for folder in self.watched:
+                    handler = AsyncWatchdogHandler(self.loop or asyncio.get_event_loop(), self._handle_event)
+                    self.observer.schedule(handler, folder, recursive=False)
+                self.observer.start()
 
     def stop(self) -> None:
         if self.observer.is_alive():
